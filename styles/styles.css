@@ -12,6 +12,15 @@
     border: none;
 
 }
+.btn2{
+    padding: 10px 24px;
+    font-size: 1rem;
+    color: #FFFFFF;
+    font-weight: bold;
+    background-color: #E02C6D;
+    border: none;
+
+}
 
 
 
@@ -55,8 +64,10 @@
     width: 582px;
 }
 .banner-img{
-    max-width: 440px;
-    background: url(../images/Circle\ design.svg);
+    max-width: 100%;
+    background-image: url(../images/Circle\ design.svg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     background-position: center;
 }
 
@@ -76,19 +87,153 @@
 
 }
 
+.sponsors{
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-box{
+    max-width: 1050px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 174px;
+
+}
+.card-container h3{
+    text-align: center;
+    font-size: 1.75rem;
+    color: #3A3A3A;
+    font-weight: 600;
+    line-height: 70px;
+
+}
+
+.card{
+    padding: 15px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.card img{
+    max-width: 100%;
+}
+.card h4{
+    font-size: 1.75rem;
+    color: #18191F;
+    font-weight: 600;
+    line-height: 40px;
+    margin-bottom: 6px;
+    
+}
+.card h5{
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.87);
+    font-weight: normal;
+    line-height: 150%;
+    margin-top: 6px;
+    margin-bottom: 15px;
+    
+}
+.card p{
+    font-size: 0.875rem;
+    color:#787885;
+    font-weight: bold;
+    line-height: 143%;
+    max-width: 196px;
+    
+}
+
+.features{
+    max-width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 96px;
+    
+}
+.product-info h2{
+    font-size: 2.37rem;
+    font-weight: bold;
+    line-height: 60px;
+    color: #0A0826;
+    margin-bottom: 13px;
+}
+.product-info p{
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 28px;
+    color: #6C6C6C;
+}
+.product-info{
+    padding-bottom: 30px;
+}
+
+.footer-container{
+    background-color: rgba(5, 3, 42, 1);
+    padding: 50px 0;
+    max-width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+}
+.footer-container h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+.footer-container p{
+    font-size: 0.875rem;
+    font-weight: bold;
+    line-height: 24px;
+    color: #D9DBE1;
+    margin-bottom: 17px;
+}
+.footer-container ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+.footer-container ul a{
+    color: #FFFFFF;
+}
+
+    
 @media screen and (max-width:576px) {
     .navbar{
         flex-direction: column;
         text-align: center;
     }
     .banner{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .banner-img{
         width: 100%;
     }
     .banner-content{
         width: 100%;
-}
+    }
+    .sponsors{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px ;
+    }
+    .card-box{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+
+    .features{
+        flex-direction: column;
+    }
+    .product-info{
+        text-align: center;
+    }
     
 }
